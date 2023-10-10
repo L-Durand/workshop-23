@@ -15,6 +15,7 @@ define maxime = Character('Maxime Garcia, Developpeur Alternant', color="#5e5e5e
 define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00dd", role="Resssources Humaines")
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
 init:
+    # Background
     image Bureau_Direction_1 = Image("maps/Bureau_Direction_1.png", rle=False)
     image bureau = Image("maps/Bureau.jpg", rle=False)
     image director_Bureau = Image("maps/Director_Bureau.png", rle=False)
@@ -25,12 +26,23 @@ init:
     image reu2 = Image("maps/reu2.jpg", rle=False)
     image reunion = Image("maps/reunion.jpg", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
+    # Personnages
+    image comm = Image("Personnages\comm.png")
+    image compta = Image("Personnages\compta.png")
+    image alternant = Image("Personnages\dev alternant.png")
+    image dev = Image("Personnages\dev.png")
+    image dev2 = Image("Personnages\dev2.png")
+    image dg = Image("Personnages\dg.png")
+    image adj = Image("Personnages\dir adj.png")
+    image logistique = Image("Personnages\logistique.png")
+    image tech = Image("Personnages\responsable tech.png")
+    image rh = Image("Personnages\rh.png")
 
 
 # Le jeu commence ici
 label start:
     scene Bureau_Direction_1
-
+    show comm
     camille "Vous venez de créer un nouveau jeu Ren'Py."
     scene bureau
 
