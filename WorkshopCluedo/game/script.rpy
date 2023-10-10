@@ -14,10 +14,47 @@ define vincent = Character('Vincent Moreau, Manager Tech', color="#ff0000", role
 define maxime = Character('Maxime Garcia, Developpeur Alternant', color="#5e5e5e", role="Developpeur Alternant")
 define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00dd", role="Resssources Humaines")
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
+init:
+    image Bureau_Direction_1 = Image("maps/Bureau_Direction_1.png", rle=False)
+    image bureau = Image("maps/Bureau.jpg", rle=False)
+    image director_Bureau = Image("maps/Director_Bureau.png", rle=False)
+    image logi = Image("maps/Logi.png", rle=False)
+    image openspace = Image("maps/Openspace.jpg", rle=False)
+    image parking = Image("maps/parking.jpg", rle=False)
+    image repa = Image("maps/repa.jpg", rle=False)
+    image reu2 = Image("maps/reu2.jpg", rle=False)
+    image reunion = Image("maps/reunion.jpg", rle=False)
+    image wc = Image("maps/wc.jpg", rle=False)
 
 
 # Le jeu commence ici
 label start:
+    scene Bureau_Direction_1
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene bureau
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene director_Bureau
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene logi
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene openspace
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene parking
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene repa
+
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene reu2
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene reunion
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+    scene wc
 
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
