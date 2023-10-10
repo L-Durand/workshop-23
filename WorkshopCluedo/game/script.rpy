@@ -27,16 +27,16 @@ init:
     image reunion = Image("maps/reunion.jpg", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
     # Personnages
-    image comm = Image("Personnages\comm.png")
-    image compta = Image("Personnages\compta.png")
-    image alternant = Image("Personnages\dev alternant.png")
-    image dev = Image("Personnages\dev.png")
-    image dev2 = Image("Personnages\dev2.png")
-    image dg = Image("Personnages\dg.png")
-    image adj = Image("Personnages\dir adj.png")
-    image logistique = Image("Personnages\logistique.png")
-    image tech = Image("Personnages\responsable tech.png")
-    image rh = Image("Personnages\rh.png")
+    image comm = Image("Personnages/comm.png")
+    image compta = Image("Personnages/compta.png")
+    image alternant = Image("Personnages/dev alternant.png")
+    image dev = Image("Personnages/dev.png")
+    image dev2 = Image("Personnages/dev2.png")
+    image dg = Image("Personnages/dg.png")
+    image adj = Image("Personnages/dir adj.png")
+    image logistique = Image("Personnages/logistique.png")
+    image tech = Image("Personnages/responsable tech.png")
+    image rh = Image("Personnages/rh.png")
 
 
 # Le jeu commence ici
@@ -44,30 +44,41 @@ label start:
     scene Bureau_Direction_1
     show comm
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene bureau
-
+    show compta
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene director_Bureau
-
+    show alternant
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene logi
-
+    show dev
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene openspace
-
+    show dev2
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene parking
-
+    show dg
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene repa
-
+    show adj
     camille "Vous venez de créer un nouveau jeu Ren'Py."
+
     scene reu2
+    show logistique
     camille "Vous venez de créer un nouveau jeu Ren'Py."
-    scene reunion
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
-    scene wc
 
+    scene reunion
+    show tech
+    camille "Vous venez de créer un nouveau jeu Ren'Py."
+
+    scene wc
+    show rh
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     nicolas "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
