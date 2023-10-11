@@ -16,7 +16,7 @@ define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
 init:
     # Background
-    image Bureau_Direction_1 = Image("maps/Bureau_Direction_1.png", rle=False)
+    image Bureau_Direction_1 = Image("maps/map.png", rle=False)
     image bureau = Image("maps/Bureau.jpg", rle=False)
     image director_Bureau = Image("maps/Director_Bureau.png", rle=False)
     image logi = Image("maps/Logi.png", rle=False)
@@ -59,50 +59,38 @@ init:
         xpos 1100
         ypos 350
 
-
-# Le jeu commence ici
 label start:
+    jump carte
 
-    scene Bureau_Direction_1
-    show comm at droite_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label carte:
+    call screen MenuUI
 
-    scene bureau
-    show compta at droite_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label bureau_direction:
+    jump carte
 
-    scene director_Bureau
-    show alternant at gauche_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label bureau_comptabilite:
+    jump carte
 
-    scene logi
-    show dev at gauche_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label bureau_commercial:
+    jump carte
+    
+label bureau_logistique:
+    jump carte
 
-    scene openspace
-    show dev2 at gauche_regard_2
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label salle_reunion:
+    jump reunion
 
-    scene parking
-    show dg at gauche_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label open_space:
+    jump carte
 
-    scene repa
-    show adj at gauche_regard_1
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label local:
+    jump carte
 
-    scene reu2
-    show logistique at gauche_regard_2
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label salle_pause:
+    jump carte
 
-    scene reunion
-    show tech at gauche_regard_2
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
+label toilettes:
+    jump carte
 
-    scene wc
-    show rh at gauche_regard_1 
-    camille "Vous venez de créer un nouveau jeu Ren'Py."
-
-    nicolas "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
-
-    return
+label parking:
+    jump carte
