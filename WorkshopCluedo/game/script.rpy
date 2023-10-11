@@ -37,48 +37,70 @@ init:
     image logistique = Image("Personnages/logistique.png")
     image tech = Image("Personnages/responsable tech.png")
     image rh = Image("Personnages/rh.png")
+    # Creation des transfos d'images
+    transform gauche_regard_1:
+        xzoom -1.0
+        zoom 2
+        xpos 200
+        ypos 350
+    transform gauche_regard_2:
+        xzoom 1.0
+        zoom 2
+        xpos 200
+        ypos 350
+    transform droite_regard_1:
+        xzoom -1.0
+        zoom 2
+        xpos 1100
+        ypos 350
+    transform droite_regard_2:
+        xzoom 1.0
+        zoom 2
+        xpos 1100
+        ypos 350
 
 
 # Le jeu commence ici
 label start:
+
     scene Bureau_Direction_1
-    show comm
+    show comm at droite_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene bureau
-    show compta
+    show compta at droite_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene director_Bureau
-    show alternant
+    show alternant at gauche_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene logi
-    show dev
+    show dev at gauche_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene openspace
-    show dev2
+    show dev2 at gauche_regard_2
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene parking
-    show dg
+    show dg at gauche_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene repa
-    show adj
+    show adj at gauche_regard_1
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene reu2
-    show logistique
+    show logistique at gauche_regard_2
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene reunion
-    show tech
+    show tech at gauche_regard_2
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     scene wc
-    show rh
+    show rh at gauche_regard_1 
     camille "Vous venez de créer un nouveau jeu Ren'Py."
 
     nicolas "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
