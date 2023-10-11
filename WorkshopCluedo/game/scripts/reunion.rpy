@@ -1,5 +1,5 @@
 label reunion:
-    play music "sons/parking-sound.mp3"
+    queue music ["sons/door-closing.mp3", "sons/office.mp3"]
     show screen back_black
     scene reunion
 
