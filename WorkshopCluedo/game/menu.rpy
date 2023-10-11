@@ -11,3 +11,5 @@ screen MenuUI:
         hotspot (1294, 390, 260, 250) clicked Jump("salle_pause")
         hotspot (1294, 640, 260, 155) clicked Jump("toilettes")
         hotspot (1555, 250, 303, 541) clicked Jump("parking")
+        # Organigramme
+        hotspot (57, 42, 150, 150) clicked Jump("organigramme")
