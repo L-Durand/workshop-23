@@ -26,6 +26,7 @@ init:
     image reu2 = Image("maps/reu2.png", rle=False)
     image reunion = Image("maps/reunion.jpg", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
+    image orgra = Image("assets/organigramme.png", rle=False)
     # Personnages
     image comm = Image("Personnages/comm.png")
     image compta = Image("Personnages/compta.png")
