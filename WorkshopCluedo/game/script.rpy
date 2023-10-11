@@ -25,7 +25,7 @@ init:
     image repa = Image("maps/repa.jpg", rle=False)
     image reunion = Image("maps/reunion.png", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
-    image orgra = Image("assets/organigramme.png", rle=False)
+    image orga = Image("assets/organigramme.png", rle=False)
     # Personnages
     image comm = Image("Personnages/comm.png")
     image compta = Image("Personnages/compta.png")
