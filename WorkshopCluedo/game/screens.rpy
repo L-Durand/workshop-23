@@ -1620,3 +1620,10 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+screen back():
+    imagebutton:
+        xpos 0
+        ypos 0
+        idle "assets/back.png"
+        action Jump("carte")
