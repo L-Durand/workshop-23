@@ -1,4 +1,5 @@
 label reunion:
+    play music "sons/parking-sound.mp3"
     show screen back_black
     scene reunion
 
@@ -14,5 +15,5 @@ label reunion:
     sebastien "Dites-moi-en plus sur cette campagne. J'aimerais en savoir davantage."
     camille "La campagne mettra l'accent sur nos produits phares et sera diffusée sur plusieurs plateformes de médias sociaux. Nous espérons attirer de nouveaux clients tout en fidélisant notre base existante."
     sebastien "Cela semble prometteur. Assurez-vous de me tenir informé de son évolution."
-
+    stop music fadeout 1.0
     jump start
