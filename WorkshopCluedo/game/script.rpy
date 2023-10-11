@@ -23,8 +23,7 @@ init:
     image openspace = Image("maps/Openspace.jpg", rle=False)
     image parking = Image("maps/parking.jpg", rle=False)
     image repa = Image("maps/repa.jpg", rle=False)
-    image reu2 = Image("maps/reu2.png", rle=False)
-    image reunion = Image("maps/reunion.jpg", rle=False)
+    image reunion = Image("maps/reunion.png", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
     image orgra = Image("assets/organigramme.png", rle=False)
     # Personnages
