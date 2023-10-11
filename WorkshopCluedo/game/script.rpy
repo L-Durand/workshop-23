@@ -63,6 +63,7 @@ label start:
     jump carte
 
 label carte:
+    stop music
     call screen MenuUI
 
 label bureau_direction:
