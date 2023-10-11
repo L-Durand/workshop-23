@@ -2,3 +2,4 @@
 *.rpyc
 *.txt
 Workshop/Cluedo/game/*
+log.txt

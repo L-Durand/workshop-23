@@ -1620,3 +1620,17 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+screen back_white():
+    imagebutton:
+        xpos 0
+        ypos 0
+        idle "assets/back_white.png"
+        action Jump("carte")
+
+screen back_black():
+    imagebutton:
+        xpos 0
+        ypos 0
+        idle "assets/back.png"
+        action Jump("carte")

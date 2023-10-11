@@ -1,4 +1,5 @@
 label reunion:
+    show screen back_black
     scene reu2
 
     show adj at gauche_regard_1
