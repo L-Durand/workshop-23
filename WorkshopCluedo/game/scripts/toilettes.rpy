@@ -1,6 +1,6 @@
 label toilette:
     stop music
-    queue music ["sons/toilets.mp3"]
+    queue music ["sons/door-closing.mp3", "sons/toilets.mp3"]
     show screen back_black
     scene wc
 

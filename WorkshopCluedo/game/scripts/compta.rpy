@@ -2,6 +2,7 @@ label compta:
     stop music
     play music ["sons/door-closing.mp3" , "sons/open-space.mp3" ]
     show screen back_black
+    show screen guess_black
     scene bureau
 
     show phone
