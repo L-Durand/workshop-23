@@ -15,6 +15,8 @@ define maxime = Character('Maxime Garcia, Developpeur Alternant', color="#5e5e5e
 define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00dd", role="Resssources Humaines")
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
 define inspecteur = Character('Inspecteur, Inspecteur', color="#5b0303", role="Inspecteur")
+python:
+    choix="unkown"
 init:
     # Background
     image Bureau_Direction_1 = Image("maps/map.png", rle=False)

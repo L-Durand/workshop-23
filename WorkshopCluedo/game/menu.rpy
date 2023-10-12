@@ -20,16 +20,16 @@ screen the_img(img, x, y):
 screen GuessUI:
     imagemap:
         ground "maps/guess_map.png"
-        hotspot (833, 200, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=833, y=200) unhovered Hide("inculper")
-        hotspot (833, 413, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=833, y=413) unhovered Hide("inculper")
-        hotspot (153, 620, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=153, y=620) unhovered Hide("inculper")
-        hotspot (492, 620, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=492, y=620) unhovered Hide("inculper")
-        hotspot (839, 620, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=839, y=620) unhovered Hide("inculper")
-        hotspot (1185, 620, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=1185, y=620) unhovered Hide("inculper")
-        hotspot (1514, 620, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=1514, y=620) unhovered Hide("inculper")
-        hotspot (153, 850, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=153, y=850) unhovered Hide("inculper")
-        hotspot (492, 850, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=492, y=850) unhovered Hide("inculper")
-        hotspot (839, 850, 251, 168) clicked Jump("carte") hovered ShowTransient("inculper", img="assets/check.png", x=839, y=850) unhovered Hide("inculper")
+        hotspot (833, 200, 251, 168) clicked [SetVariable("choix", 1), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=833, y=200) unhovered Hide("inculper")
+        hotspot (833, 413, 251, 168) clicked  [SetVariable("choix", 2), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=833, y=413) unhovered Hide("inculper")
+        hotspot (153, 620, 251, 168) clicked  [SetVariable("choix", 3), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=153, y=620) unhovered Hide("inculper")
+        hotspot (492, 620, 251, 168) clicked  [SetVariable("choix", 4), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=492, y=620) unhovered Hide("inculper")
+        hotspot (839, 620, 251, 168) clicked  [SetVariable("choix", 5), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=839, y=620) unhovered Hide("inculper")
+        hotspot (1185, 620, 251, 168) clicked  [SetVariable("choix", 6), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=1185, y=620) unhovered Hide("inculper")
+        hotspot (1514, 620, 251, 168) clicked  [SetVariable("choix", 7), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=1514, y=620) unhovered Hide("inculper")
+        hotspot (153, 850, 251, 168) clicked  [SetVariable("choix", 8), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=153, y=850) unhovered Hide("inculper")
+        hotspot (492, 850, 251, 168) clicked  [SetVariable("choix", 9), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=492, y=850) unhovered Hide("inculper")
+        hotspot (839, 850, 251, 168) clicked  [SetVariable("choix", 10), Jump("results")] hovered ShowTransient("inculper", img="assets/check.png", x=839, y=850) unhovered Hide("inculper")
 
 screen inculper(img, x, y):
     add img pos (x, y)
