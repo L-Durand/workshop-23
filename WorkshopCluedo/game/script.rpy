@@ -126,4 +126,6 @@ label parking:
     jump carte
 
 label final:
-    jump guess
+    stop music
+    play music "sons/guess.mp3"
+    call screen GuessUI
