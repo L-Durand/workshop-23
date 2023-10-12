@@ -98,7 +98,7 @@ label bureau_direction:
     jump carte
 
 label bureau_comptabilite:
-    jump carte
+    jump compta
 
 label bureau_commercial:
     jump carte

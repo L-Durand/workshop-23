@@ -4,7 +4,6 @@ label toilette:
     show screen back_black
     scene wc
 
-    show phone
     show dg at gauche_regard_1
     show adj at droite_regard_2_hide
 
