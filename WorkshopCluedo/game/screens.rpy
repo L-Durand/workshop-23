@@ -396,13 +396,13 @@ style main_menu_vbox:
     yoffset -30
 
 style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
+    properties gui.text_properties("", accent=True)
 
 style main_menu_title:
-    properties gui.text_properties("title")
+    properties gui.text_properties("")
 
 style main_menu_version:
-    properties gui.text_properties("version")
+    properties gui.text_properties("")
 
 
 ## Écran du menu de jeu ########################################################
@@ -476,7 +476,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
         action Return()
 
-    label title
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -1641,3 +1640,9 @@ screen guess_black():
         ypos 10
         idle "assets/guess_black.png"
         action Jump("final")
+
+screen phone():
+    imagebutton:
+        xpos 450
+        ypos 200
+        idle "assets/phone.png"
