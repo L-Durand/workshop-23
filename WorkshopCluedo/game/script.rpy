@@ -95,15 +95,18 @@ label start:
     jump carte
 
 label bureau_direction:
+    "Il n'y a rien a faire ici..."
     jump carte
 
 label bureau_comptabilite:
     jump compta
 
 label bureau_commercial:
+    "Il n'y a rien a faire ici..."
     jump carte
     
 label bureau_logistique:
+    "Il n'y a rien a faire ici..."
     jump carte
 
 label salle_reunion:
@@ -113,6 +116,7 @@ label open_space:
     jump openspace
 
 label local:
+    "Il n'y a rien a faire ici..."
     jump carte
 
 label salle_pause:
