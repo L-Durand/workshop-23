@@ -90,11 +90,6 @@ init:
 label start:
     jump carte
 
-label carte:
-    stop music
-    play music "sons/menu.mp3"
-    call screen MenuUI
-
 label bureau_direction:
     jump carte
 
@@ -126,4 +121,6 @@ label parking:
     jump carte
 
 label final:
-    jump guess
+    stop music
+    play music "sons/guess.mp3"
+    call screen GuessUI
