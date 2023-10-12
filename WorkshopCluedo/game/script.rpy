@@ -125,5 +125,5 @@ label toilettes:
 label parking:
     jump carte
 
-label final_guess:
+label final:
     jump guess
