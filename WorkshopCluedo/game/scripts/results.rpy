@@ -1,6 +1,10 @@
 label results:
     stop music
     play music "sons/guess.mp3"
-    scene parking
-    "Le choix est [choix]"
-    jump carte
+    if choix == 5:
+        scene parking
+        "gagné"
+    else:
+        scene parking
+        "Perdu ! Le Harceleur était François Levebvre, Comptable"
+    jump flashback
