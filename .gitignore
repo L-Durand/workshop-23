@@ -4,3 +4,5 @@
 Workshop/Cluedo/game/*
 log.txt
 .vscode
+*.save
+*.rpyb
