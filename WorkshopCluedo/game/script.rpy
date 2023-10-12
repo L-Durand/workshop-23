@@ -14,6 +14,7 @@ define vincent = Character('Vincent Moreau, Manager Tech', color="#ff0000", role
 define maxime = Character('Maxime Garcia, Developpeur Alternant', color="#5e5e5e", role="Developpeur Alternant")
 define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00dd", role="Resssources Humaines")
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
+define inspecteur = Character('Inspecteur, Inspecteur', color="#5b0303", role="Inspecteur")
 init:
     # Background
     image Bureau_Direction_1 = Image("maps/map.png", rle=False)
@@ -120,7 +121,7 @@ label salle_pause:
     jump carte
 
 label toilettes:
-    jump carte
+    jump toilette
 
 label parking:
     jump carte
