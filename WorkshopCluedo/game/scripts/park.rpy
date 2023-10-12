@@ -49,4 +49,5 @@ label park:
     "*Le comptable part en râlant et en soufflant, il semble énervé*"
 
     stop music fadeout 1.0
-    jump start
+    $ parking_visited=True
+    jump carte

@@ -1,4 +1,6 @@
 label openspace:
+    stop music
+    play music "sons/open-space.mp3"
     scene openspace
 
     show dev at gauche_regard_1

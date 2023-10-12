@@ -17,6 +17,7 @@ define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", rol
 define inspecteur = Character('Inspecteur, Inspecteur', color="#5b0303", role="Inspecteur")
 python:
     choix="unkown"
+    parking_visited=False
 init:
     # Background
     image Bureau_Direction_1 = Image("maps/map.png", rle=False)
@@ -109,19 +110,22 @@ label salle_reunion:
     jump reunion
 
 label open_space:
-    jump carte
+    jump openspace
 
 label local:
     jump carte
 
 label salle_pause:
-    jump carte
+    jump pause
 
 label toilettes:
     jump toilette
 
 label parking:
-    jump carte
+    if not parking_visited:
+        jump park
+    else:
+        jump parking2
 
 label final:
     stop music
