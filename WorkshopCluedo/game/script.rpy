@@ -92,6 +92,7 @@ label start:
 
 label carte:
     stop music
+    play music "sons/menu.mp3"
     call screen MenuUI
 
 label bureau_direction:
@@ -123,3 +124,6 @@ label toilettes:
 
 label parking:
     jump carte
+
+label final:
+    jump guess

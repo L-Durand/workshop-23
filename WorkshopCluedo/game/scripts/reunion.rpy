@@ -1,6 +1,8 @@
 label reunion:
+    stop music
     queue music ["sons/door-closing.mp3", "sons/office.mp3"]
     show screen back_black
+    show screen guess_black
     scene reunion
 
     show adj at gauche_regard_1
@@ -30,4 +32,4 @@ label reunion:
     show dg at droite_regard_2
     sebastien "Cela semble prometteur. Assurez-vous de me tenir informé de son évolution."
     stop music fadeout 1.0
-    jump start
+    jump carte
