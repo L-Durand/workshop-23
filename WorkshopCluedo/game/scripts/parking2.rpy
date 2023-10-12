@@ -37,4 +37,4 @@ label parking2:
     show comm at droite_regard_2
     "*Le comptable quitte la discussion et rentre au sein des locaux*"
     stop music fadeout 1.0
-    jump start
+    jump carte
