@@ -1634,3 +1634,10 @@ screen back_black():
         ypos 0
         idle "assets/back.png"
         action Jump("carte")
+
+screen guess_black():
+    imagebutton:
+        xpos 1800
+        ypos 10
+        idle "assets/guess_black.png"
+        action Jump("final")

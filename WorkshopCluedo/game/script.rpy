@@ -23,10 +23,9 @@ init:
     image openspace = Image("maps/Openspace.jpg", rle=False)
     image parking = Image("maps/parking.jpg", rle=False)
     image repa = Image("maps/repa.jpg", rle=False)
-    image reu2 = Image("maps/reu2.png", rle=False)
-    image reunion = Image("maps/reunion.jpg", rle=False)
+    image reunion = Image("maps/reunion.png", rle=False)
     image wc = Image("maps/wc.jpg", rle=False)
-    image orgra = Image("assets/organigramme.png", rle=False)
+    image orga = Image("assets/organigramme.png", rle=False)
     # Personnages
     image comm = Image("Personnages/comm.png")
     image compta = Image("Personnages/compta.png")
@@ -44,26 +43,56 @@ init:
         zoom 2
         xpos 200
         ypos 350
+        alpha 1.0
     transform gauche_regard_2:
         xzoom 1.0
         zoom 2
         xpos 200
         ypos 350
+        alpha 1.0
     transform droite_regard_1:
         xzoom -1.0
         zoom 2
         xpos 1100
         ypos 350
+        alpha 1.0
     transform droite_regard_2:
         xzoom 1.0
         zoom 2
         xpos 1100
         ypos 350
+        alpha 1.0
+    transform gauche_regard_1_hide:
+        xzoom -1.0
+        zoom 1.5
+        xpos 200
+        ypos 350
+        alpha .8
+    transform gauche_regard_2_hide:
+        xzoom 1.0
+        zoom 1.5
+        xpos 200
+        ypos 350
+        alpha .8
+    transform droite_regard_1_hide:
+        xzoom -1.0
+        zoom 1.5
+        xpos 1100
+        ypos 350
+        alpha .8
+    transform droite_regard_2_hide:
+        xzoom 1.0
+        zoom 1.5
+        xpos 1100
+        ypos 350
+        alpha .8
 
 label start:
     jump carte
 
 label carte:
+    stop music
+    play music "sons/menu.mp3"
     call screen MenuUI
 
 label bureau_direction:
@@ -95,3 +124,8 @@ label toilettes:
 
 label parking:
     jump carte
+
+label final:
+    stop music
+    play music "sons/guess.mp3"
+    call screen GuessUI

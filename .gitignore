@@ -3,3 +3,4 @@
 *.txt
 Workshop/Cluedo/game/*
 log.txt
+.vscode

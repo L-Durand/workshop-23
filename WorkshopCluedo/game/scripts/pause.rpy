@@ -1,4 +1,5 @@
 label pause:
+    stop music
     scene repa
 
     show logistique at gauche_regard_2
