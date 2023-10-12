@@ -43,21 +43,49 @@ init:
         zoom 2
         xpos 200
         ypos 350
+        alpha 1.0
     transform gauche_regard_2:
         xzoom 1.0
         zoom 2
         xpos 200
         ypos 350
+        alpha 1.0
     transform droite_regard_1:
         xzoom -1.0
         zoom 2
         xpos 1100
         ypos 350
+        alpha 1.0
     transform droite_regard_2:
         xzoom 1.0
         zoom 2
         xpos 1100
         ypos 350
+        alpha 1.0
+    transform gauche_regard_1_hide:
+        xzoom -1.0
+        zoom 1.5
+        xpos 200
+        ypos 350
+        alpha .8
+    transform gauche_regard_2_hide:
+        xzoom 1.0
+        zoom 1.5
+        xpos 200
+        ypos 350
+        alpha .8
+    transform droite_regard_1_hide:
+        xzoom -1.0
+        zoom 1.5
+        xpos 1100
+        ypos 350
+        alpha .8
+    transform droite_regard_2_hide:
+        xzoom 1.0
+        zoom 1.5
+        xpos 1100
+        ypos 350
+        alpha .8
 
 label start:
     jump carte
