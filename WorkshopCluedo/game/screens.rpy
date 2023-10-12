@@ -1640,4 +1640,4 @@ screen guess_black():
         xpos 1800
         ypos 10
         idle "assets/guess_black.png"
-        action Jump("carte")
+        action Jump("final")
