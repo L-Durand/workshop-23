@@ -14,6 +14,9 @@ define vincent = Character('Vincent Moreau, Manager Tech', color="#ff0000", role
 define maxime = Character('Maxime Garcia, Developpeur Alternant', color="#5e5e5e", role="Developpeur Alternant")
 define guillaume = Character('Guillaume Kim, Resssources Humaines', color="#ff00dd", role="Resssources Humaines")
 define sebastien = Character('Sébastien Singh, Directeur', color="#1100ff", role="Directeur")
+define inspecteur = Character('Inspecteur, Inspecteur', color="#5b0303", role="Inspecteur")
+python:
+    choix="unkown"
 init:
     # Background
     image Bureau_Direction_1 = Image("maps/map.png", rle=False)
@@ -90,11 +93,6 @@ init:
 label start:
     jump carte
 
-label carte:
-    stop music
-    play music "sons/menu.mp3"
-    call screen MenuUI
-
 label bureau_direction:
     jump carte
 
@@ -120,10 +118,12 @@ label salle_pause:
     jump carte
 
 label toilettes:
-    jump carte
+    jump toilette
 
 label parking:
     jump carte
 
 label final:
-    jump guess
+    stop music
+    play music "sons/guess.mp3"
+    call screen GuessUI

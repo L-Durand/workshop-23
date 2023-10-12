@@ -1,4 +1,5 @@
 label reunion:
+    stop music
     queue music ["sons/door-closing.mp3", "sons/office.mp3"]
     show screen back_black
     show screen guess_black
