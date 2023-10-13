@@ -1,6 +1,8 @@
 label pause:
     stop music
     scene repa
+    show screen back_black
+    show screen guess_black
 
     show logistique at gauche_regard_2
     show rh at droite_regard_1

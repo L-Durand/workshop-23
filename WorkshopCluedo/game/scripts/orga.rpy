@@ -1,5 +1,7 @@
 label organigramme:
     scene orga
+    show screen back_black
+    show screen guess_black
     "Bienvenue chez MHC : Votre Partenaire de Confiance pour le Matériel Médical
     MHC s'engage à fournir des solutions de matériel médical de haute qualité, 
     répondant aux besoins variés du secteur de la santé."

@@ -2,6 +2,7 @@ label toilette:
     stop music
     queue music ["sons/toilets.mp3"]
     show screen back_black
+    show screen guess_black
     scene wc
 
     show phone
