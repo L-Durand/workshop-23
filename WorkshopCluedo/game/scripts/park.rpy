@@ -1,6 +1,6 @@
 label park:
     stop music
-    queue music ["sons/parking-sound.mp3"]
+    queue music ["sons/door-closing.mp3", "sons/parking-sound.mp3"]
     show screen back_black
     show screen guess_black
     scene parking

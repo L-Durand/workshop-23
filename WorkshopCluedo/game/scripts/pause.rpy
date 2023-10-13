@@ -1,5 +1,6 @@
 label pause:
     stop music
+    play music ["sons/door-closing.mp3",  "sons/break-room.mp3"]
     scene repa
     show screen back_black
     show screen guess_black

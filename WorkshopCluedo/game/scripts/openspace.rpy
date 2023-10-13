@@ -1,8 +1,7 @@
 label openspace:
     stop music
-    play music "sons/open-space.mp3"
+    play music ["sons/door-closing.mp3", "sons/open-space.mp3"]
     scene openspace
-    
     show screen back_black
     show screen guess_black
 

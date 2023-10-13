@@ -1,11 +1,10 @@
 label toilette:
     stop music
-    queue music ["sons/toilets.mp3"]
+    queue music ["sons/door-closing.mp3", "sons/toilets.mp3"]
     show screen back_black
     show screen guess_black
     scene wc
 
-    show phone
     show dg at gauche_regard_1
     show adj at droite_regard_2_hide
 

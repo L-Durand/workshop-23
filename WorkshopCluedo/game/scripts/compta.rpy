@@ -1,4 +1,4 @@
-label bureau_compta:
+label compta:
     stop music
     play music ["sons/door-closing.mp3" , "sons/open-space.mp3" ]
     show screen back_black
@@ -32,4 +32,4 @@ label bureau_compta:
     sandrine "Je ne peux pas continuer cette conversation."
     
     stop music fadeout 1.0
-    jump start
+    jump carte
