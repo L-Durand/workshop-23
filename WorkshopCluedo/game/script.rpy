@@ -116,8 +116,7 @@ label open_space:
     jump openspace
 
 label local:
-    "Il n'y a rien a faire ici..."
-    jump carte
+    jump parking2
 
 label salle_pause:
     jump pause
@@ -126,10 +125,8 @@ label toilettes:
     jump toilette
 
 label parking:
-    if not parking_visited:
-        jump park
-    else:
-        jump parking2
+    jump park
+
 
 label final:
     stop music
